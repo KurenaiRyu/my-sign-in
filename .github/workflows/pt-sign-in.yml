@@ -1,4 +1,4 @@
-name: qiandao
+name: pt-sign-in
 
 on:
   push:
