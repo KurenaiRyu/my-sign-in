@@ -31,10 +31,10 @@ jobs:
         env:
           VERSION: ${{ steps.set-version.outputs.version }} 
         if: steps.cache-jar.outputs.cache-hit != 'true'
-        run: wget -O "BILIBILI-HELPER.zip" "https://github.com/JunzhouLiu/BILIBILI-HELPER/releases/download/V${version}/BILIBILI-HELPER-v${version}.zip" &&
+        run: wget -O "BILIBILI-HELPER.zip" "https://github.com/JunzhouLiu/BILIBILI-HELPER/releases/download/V${VERSION}/BILIBILI-HELPER-v${VERSION}.zip" &&
             mkdir "jar" && 
             unzip -o "BILIBILI-HELPER.zip" -d "./jar/" &&
-            mv "./jar/BILIBILI-HELPER-v${version}.jar" "./jar/BILIBILI-HELPER.jar" -f &&
+            mv "./jar/BILIBILI-HELPER-v${VERSION}.jar" "./jar/BILIBILI-HELPER.jar" -f &&
             rm "BILIBILI-HELPER.zip" 
       - name: Run BILIBILI-HELPER
         env:
