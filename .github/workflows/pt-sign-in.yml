@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          repository: my-org/my-tools
+          repository: wdjoys/pt-tools
 
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
